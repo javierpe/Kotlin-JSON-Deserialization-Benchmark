@@ -2,7 +2,7 @@ package moshiSerialization.models
 
 import com.squareup.moshi.Json
 
-sealed class MoshiComponentModel<T> {
+abstract class MoshiComponentModel {
     @Json(name = "render")
     var render: String = ""
 
@@ -10,5 +10,5 @@ sealed class MoshiComponentModel<T> {
     var index: Int = 0
 
     @Json(name = "resource")
-    abstract val resource: T
+    abstract val resource: Any
 }

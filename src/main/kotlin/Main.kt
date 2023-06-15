@@ -13,8 +13,8 @@ import kotlin.time.toJavaDuration
 
 
 fun main() {
-    //testMoshiSerialization()
-    //testGsonSerialization()
+    testMoshiSerialization()
+    testGsonSerialization()
     testKotlinSerialization()
 }
 

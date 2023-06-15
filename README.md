@@ -19,7 +19,7 @@ An architecture based on SDUI is being developed which has to have an optimal JS
 * Determine the additional weight of each library
 
 ## Tools
-it uses [Kotlin Benchmark](https://github.com/Kotlin/kotlinx-benchmark) wich is based on [Java Microbenchmark Harness (JHM)](https://github.com/openjdk/jmh).
+It uses [Kotlin Benchmark](https://github.com/Kotlin/kotlinx-benchmark) wich is based on [Java Microbenchmark Harness (JHM)](https://github.com/openjdk/jmh).
 
 ## Metrics
 ### Throughput

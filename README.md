@@ -119,8 +119,6 @@ Gson | 40
 Kotlin | 28
 
 ## Throughput
-![bar-graph](https://github.com/javierpe/Kotlin-JSON-Deserialization-Benchmark/assets/7097754/c5fbc154-736e-4fc5-9cc2-75268c0c77fa)
-
 #### With warmup
  - Warmup iterations: 5
 
@@ -138,6 +136,8 @@ Benchmark | Score | Units
 Gson | 111.332 | ops/ms
 Kotlin | 91.164 | ops/ms
 Moshi | 3.628 | ops/ms
+
+![bar-graph-2](https://github.com/javierpe/Kotlin-JSON-Deserialization-Benchmark/assets/7097754/035ba15b-1410-4cca-a786-ed273f3a78e3)
 
 ## Average time
 #### With warmup
@@ -157,6 +157,8 @@ Benchmark | Score | Units
 Gson | 0.016 | ms/op
 Kotlin | 0.014 | ms/op
 Moshi | 0.577 | ms/op
+
+![bar-graph-3](https://github.com/javierpe/Kotlin-JSON-Deserialization-Benchmark/assets/7097754/15b0f0a9-f278-40f5-9fa2-7c3d18029e55)
 
 ## Single shot time
 #### With warmup
@@ -178,3 +180,4 @@ Gson | 35.654 | ms/op
 Kotlin | 41.377 | ms/op
 Moshi | 234.596 | ms/op
 
+![bar-graph-4](https://github.com/javierpe/Kotlin-JSON-Deserialization-Benchmark/assets/7097754/df065017-dd12-430e-aef4-cdcf3d44bd58)

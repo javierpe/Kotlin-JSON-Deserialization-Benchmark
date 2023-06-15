@@ -28,9 +28,6 @@ Counting the total throughput over all worker threads. This mode is time-based, 
 ### Average
 Average time per per operation
 Counting the average time to call over all worker threads. This is the inverse of {@link Mode#Throughput}, but with different aggregation policy. This mode is time-based, and it will run until the iteration time expires.
-### Sample time
-Samples the time for each operation
-Randomly samples the time needed for the call. This mode automatically adjusts the sampling frequency, but may omit some pauses which missed the sampling measurement. This mode is time-based, and it will run until the iteration time expires.
 ### Single shot time
 Measures the time for a single operation
 This mode is useful to estimate the "cold" performance when you don't want to hide the warmup invocations, or if you want to see the progress from call to call, or you want to record every single sample. This mode is work-based, and will run only for a single invocation of Benchmark method.
@@ -159,13 +156,23 @@ Gson | 0.016 | ms/op
 Kotlin | 0.014 | ms/op
 Moshi | 0.577 | ms/op
 
-## Sample time
+## Single shot time
 #### With warmup
  - Warmup iterations: 5
 
 Benchmark | Score | Units
 --- | --- | ---
-Gson | 0.016 | ms/op
-Kotlin | 0.014 | ms/op
-Moshi | 0.577 | ms/op
+Gson | 0.568 | ms/op
+Kotlin | 0.664 | ms/op
+Moshi | 5.199 | ms/op
+
+## Single shot time
+#### Without warmup
+ - Warmup iterations: 0
+
+Benchmark | Score | Units
+--- | --- | ---
+Gson | 35.654 | ms/op
+Kotlin | 41.377 | ms/op
+Moshi | 234.596 | ms/op
 

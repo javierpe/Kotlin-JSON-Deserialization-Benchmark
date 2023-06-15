@@ -23,13 +23,16 @@ it uses [Kotlin Benchmark](https://github.com/Kotlin/kotlinx-benchmark) wich is 
 
 ## Metrics
 ### Throughput
-Operations per unit of time
+**Operations per unit of time**
+
 Counting the total throughput over all worker threads. This mode is time-based, and it will run until the iteration time expires.
 ### Average
-Average time per per operation
+**Average time per per operation**
+
 Counting the average time to call over all worker threads. This is the inverse of {@link Mode#Throughput}, but with different aggregation policy. This mode is time-based, and it will run until the iteration time expires.
 ### Single shot time
-Measures the time for a single operation
+**Measures the time for a single operation**
+
 This mode is useful to estimate the "cold" performance when you don't want to hide the warmup invocations, or if you want to see the progress from call to call, or you want to record every single sample. This mode is work-based, and will run only for a single invocation of Benchmark method.
 Caveats for this mode include:
 * More warmup/measurement iterations are generally required.
@@ -119,65 +122,11 @@ Gson | 40
 Kotlin | 28
 
 ## Throughput
-#### With warmup
- - Warmup iterations: 5
-
-Benchmark | Score | Units
---- | --- | ---
-Gson | 169.898 | ops/ms
-Kotlin | 151.430 | ops/ms
-Moshi | 11.316 | ops/ms
-
-#### Without warmup
- - Warmup iterations: 0
-
-Benchmark | Score | Units
---- | --- | ---
-Gson | 111.332 | ops/ms
-Kotlin | 91.164 | ops/ms
-Moshi | 3.628 | ops/ms
-
-![bar-graph-2](https://github.com/javierpe/Kotlin-JSON-Deserialization-Benchmark/assets/7097754/035ba15b-1410-4cca-a786-ed273f3a78e3)
+<img width="932" alt="Captura de pantalla 2023-06-15 a la(s) 8 43 17" src="https://github.com/javierpe/Kotlin-JSON-Deserialization-Benchmark/assets/7097754/f8ffa9cb-31e3-4daa-bad2-c5460f0c4657">
 
 ## Average time
-#### With warmup
- - Warmup iterations: 5
-
-Benchmark | Score | Units
---- | --- | ---
-Gson | 0.006 | ms/op
-Kotlin | 0.005 | ms/op
-Moshi | 0.087 | ms/op
-
-#### Without warmup
- - Warmup iterations: 0
-
-Benchmark | Score | Units
---- | --- | ---
-Gson | 0.016 | ms/op
-Kotlin | 0.014 | ms/op
-Moshi | 0.577 | ms/op
-
-![bar-graph-3](https://github.com/javierpe/Kotlin-JSON-Deserialization-Benchmark/assets/7097754/15b0f0a9-f278-40f5-9fa2-7c3d18029e55)
+<img width="932" alt="Captura de pantalla 2023-06-15 a la(s) 8 52 24" src="https://github.com/javierpe/Kotlin-JSON-Deserialization-Benchmark/assets/7097754/847ef456-f0eb-4f74-8e74-7a7b9f2ae3f9">
 
 ## Single shot time
-#### With warmup
- - Warmup iterations: 5
+<img width="932" alt="Captura de pantalla 2023-06-15 a la(s) 8 55 39" src="https://github.com/javierpe/Kotlin-JSON-Deserialization-Benchmark/assets/7097754/571dd02b-c06a-4df6-bfcd-78afe220ea9f">
 
-Benchmark | Score | Units
---- | --- | ---
-Gson | 0.568 | ms/op
-Kotlin | 0.664 | ms/op
-Moshi | 5.199 | ms/op
-
-## Single shot time
-#### Without warmup
- - Warmup iterations: 0
-
-Benchmark | Score | Units
---- | --- | ---
-Gson | 35.654 | ms/op
-Kotlin | 41.377 | ms/op
-Moshi | 234.596 | ms/op
-
-![bar-graph-4](https://github.com/javierpe/Kotlin-JSON-Deserialization-Benchmark/assets/7097754/df065017-dd12-430e-aef4-cdcf3d44bd58)

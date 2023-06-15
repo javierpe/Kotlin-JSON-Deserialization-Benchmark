@@ -46,3 +46,70 @@ This test is performed under the following environment:
 * Software 
   * macOS 13.4 (22F66)
   * IntelliJ IDEA 2023.1.2 (Community Edition) | Build #IC-231.9011.34
+ 
+ ## Test JSON
+ ```json
+
+{
+  "header": [
+    {
+      "render": "text",
+      "index": 1,
+      "resource": {
+        "text": "This is a header"
+      }
+    }
+  ],
+  "body": [
+    {
+      "render": "text",
+      "index": 1,
+      "resource": {
+        "text": "This is a body"
+      }
+    },
+    {
+      "render": "banner",
+      "index": 2,
+      "resource": {
+        "url": "https://i.pinimg.com/474x/d6/9f/8b/d69f8b207b2a999ef6f843cc62ebbc49.jpg",
+        "type": "with_text"
+      }
+    },
+    {
+      "render": "message_text",
+      "index": 3,
+      "resource": {
+        "message": "This is a message component"
+      }
+    }
+  ]
+}
+
+```
+
+## Results
+
+### First
+Simple measurement by calling each respective deserialization method
+
+#### Execution #1
+Library | Time in ms
+--- | ---
+Moshi | 757
+Gson | 38
+Kotlin | 28
+
+#### Execution #2
+Library | Time in ms
+--- | ---
+Moshi | 754
+Gson | 38
+Kotlin | 27
+
+#### Execution #3
+Library | Time in ms
+--- | ---
+Moshi | 765
+Gson | 40
+Kotlin | 28

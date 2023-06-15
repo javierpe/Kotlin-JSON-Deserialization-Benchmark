@@ -119,6 +119,8 @@ Gson | 40
 Kotlin | 28
 
 ## Throughput
+![bar-graph](https://github.com/javierpe/Kotlin-JSON-Deserialization-Benchmark/assets/7097754/c5fbc154-736e-4fc5-9cc2-75268c0c77fa)
+
 #### With warmup
  - Warmup iterations: 5
 

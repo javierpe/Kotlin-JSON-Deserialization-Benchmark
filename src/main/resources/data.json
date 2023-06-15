@@ -1,0 +1,35 @@
+{
+  "header": [
+    {
+      "render": "text",
+      "index": 1,
+      "resource": {
+        "text": "This is a header"
+      }
+    }
+  ],
+  "body": [
+    {
+      "render": "text",
+      "index": 1,
+      "resource": {
+        "text": "This is a body"
+      }
+    },
+    {
+      "render": "banner",
+      "index": 2,
+      "resource": {
+        "url": "https://i.pinimg.com/474x/d6/9f/8b/d69f8b207b2a999ef6f843cc62ebbc49.jpg",
+        "type": "with_text"
+      }
+    },
+    {
+      "render": "message_text",
+      "index": 3,
+      "resource": {
+        "message": "Esto es un mensaje"
+      }
+    }
+  ]
+}

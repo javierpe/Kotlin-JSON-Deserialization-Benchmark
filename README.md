@@ -90,6 +90,8 @@ This test is performed under the following environment:
 
 ## Results
 
+### Iterations: 2
+
 ### First
 Simple measurement by calling each respective deserialization method
 
@@ -114,25 +116,39 @@ Moshi | 765
 Gson | 40
 Kotlin | 28
 
-### Throughput #1
+#### Throughput #1
  - Warmup iterations: 5
- - Measurement
-   - Iterations: 2
 
-Benchmark | Count | Score | Units
---- | --- | --- | ---
-Gson | 2 | 169.898 | ops/ms
-Kotlin | 2 | 151.430 | ops/ms
-Moshi | 2 | 11.316 | ops/ms
+Benchmark | Score | Units
+--- | --- | ---
+Gson | 169.898 | ops/ms
+Kotlin | 151.430 | ops/ms
+Moshi | 11.316 | ops/ms
 
-### Throughput #2
+#### Throughput #2
  - Warmup iterations: 0
- - Measurement
-   - Iterations: 2
 
-Benchmark | Count | Score | Units
---- | --- | --- | ---
-Gson | 2 | 111.332 | ops/ms
-Kotlin | 2 | 91.164 | ops/ms
-Moshi | 2 | 3.628 | ops/ms
+Benchmark | Score | Units
+--- | --- | ---
+Gson | 111.332 | ops/ms
+Kotlin | 91.164 | ops/ms
+Moshi | 3.628 | ops/ms
+
+#### Average time #1
+ - Warmup iterations: 5
+
+Benchmark | Score | Units
+--- | --- | ---
+Gson | 0.006 | ms/op
+Kotlin | 0.005 | ms/op
+Moshi | 0.087 | ms/op
+
+#### Average time #2
+ - Warmup iterations: 0
+
+Benchmark | Score | Units
+--- | --- | ---
+Gson | 0.016 | ms/op
+Kotlin | 0.014 | ms/op
+Moshi | 0.577 | ms/op
 

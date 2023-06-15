@@ -113,3 +113,26 @@ Library | Time in ms
 Moshi | 765
 Gson | 40
 Kotlin | 28
+
+### Throughput #1
+ - Warmup iterations: 5
+ - Measurement
+   - Iterations: 2
+
+Benchmark | Count | Score | Units
+--- | --- | --- | ---
+Gson | 2 | 169.898 | ops/ms
+Kotlin | 2 | 151.430 | ops/ms
+Moshi | 2 | 11.316 | ops/ms
+
+### Throughput #2
+ - Warmup iterations: 0
+ - Measurement
+   - Iterations: 2
+
+Benchmark | Count | Score | Units
+--- | --- | --- | ---
+Gson | 2 | 111.332 | ops/ms
+Kotlin | 2 | 91.164 | ops/ms
+Moshi | 2 | 3.628 | ops/ms
+

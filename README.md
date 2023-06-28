@@ -27,7 +27,7 @@ It uses [Kotlin Benchmark](https://github.com/Kotlin/kotlinx-benchmark) wich is 
 
 Counting the total throughput over all worker threads. This mode is time-based, and it will run until the iteration time expires.
 ### Average
-**Average time per per operation**
+**Average time per operation**
 
 Counting the average time to call over all worker threads. This is the inverse of {@link Mode#Throughput}, but with different aggregation policy. This mode is time-based, and it will run until the iteration time expires.
 ### Single shot time
@@ -88,45 +88,15 @@ This test is performed under the following environment:
 
 ```
 
-## Results
-
-### Configuration
-Setting | Value
---- | ---
-Iterations | 2
-Max Time | 1
-Time unit | Seconds
-
-### First
-Simple measurement by calling each respective deserialization method
-
-#### Execution #1
-Library | Time in ms
---- | ---
-Moshi | 757
-Gson | 38
-Kotlin | 28
-
-#### Execution #2
-Library | Time in ms
---- | ---
-Moshi | 754
-Gson | 38
-Kotlin | 27
-
-#### Execution #3
-Library | Time in ms
---- | ---
-Moshi | 765
-Gson | 40
-Kotlin | 28
+# Results
 
 ## Throughput
-<img width="932" alt="Captura de pantalla 2023-06-15 a la(s) 8 43 17" src="https://github.com/javierpe/Kotlin-JSON-Deserialization-Benchmark/assets/7097754/f8ffa9cb-31e3-4daa-bad2-c5460f0c4657">
+<img width="932" alt="Captura de pantalla 2023-06-27 a la(s) 18 45 19" src="https://github.com/javierpe/Kotlin-JSON-Deserialization-Benchmark/assets/7097754/a02719cb-6a03-44fc-af3d-61b983184ebc">
 
 ## Average time
-<img width="932" alt="Captura de pantalla 2023-06-15 a la(s) 8 52 24" src="https://github.com/javierpe/Kotlin-JSON-Deserialization-Benchmark/assets/7097754/847ef456-f0eb-4f74-8e74-7a7b9f2ae3f9">
+<img width="932" alt="Captura de pantalla 2023-06-27 a la(s) 18 45 39" src="https://github.com/javierpe/Kotlin-JSON-Deserialization-Benchmark/assets/7097754/418722bf-fcfd-461c-b8ad-3860deb5e68c">
 
 ## Single shot time
-<img width="932" alt="Captura de pantalla 2023-06-15 a la(s) 8 55 39" src="https://github.com/javierpe/Kotlin-JSON-Deserialization-Benchmark/assets/7097754/571dd02b-c06a-4df6-bfcd-78afe220ea9f">
+<img width="932" alt="Captura de pantalla 2023-06-27 a la(s) 18 45 55" src="https://github.com/javierpe/Kotlin-JSON-Deserialization-Benchmark/assets/7097754/b2953d68-2b66-4ad2-84fe-b265a0513e3c">
+
 

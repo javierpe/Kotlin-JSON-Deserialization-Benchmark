@@ -1,4 +1,4 @@
-# Kotlin JSON Deserialization Benchmark Test
+# JSON Deserialization Benchmark Test
 The following Benchmark aims to compare the following libraries to deserialize JSON:
 * [Gson](https://github.com/google/gson)
 * [Kotlin Serialization](https://github.com/Kotlin/kotlinx.serialization)

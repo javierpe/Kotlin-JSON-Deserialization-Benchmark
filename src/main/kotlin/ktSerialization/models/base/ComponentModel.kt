@@ -1,9 +1,14 @@
 package ktSerialization.models.base
 
+import kotlinx.serialization.ExperimentalSerializationApi
+import kotlinx.serialization.Polymorphic
 import kotlinx.serialization.Serializable
-import ktSerialization.serializer.ComponentSerializer
+import kotlinx.serialization.json.JsonClassDiscriminator
 
-@Serializable(with = ComponentSerializer::class)
+@OptIn(ExperimentalSerializationApi::class)
+@Serializable
+@Polymorphic
+@JsonClassDiscriminator("render")
 abstract class ComponentModel {
     abstract val render: String
     abstract val index: Int

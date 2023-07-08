@@ -2,8 +2,8 @@ import com.google.gson.GsonBuilder
 import gson.GsonComponentModel
 import gson.GsonDataContentModel
 import gson.PolymorphDeserializer
-import kotlinx.serialization.json.Json
 import ktSerialization.models.base.DataContentModel
+import ktSerialization.serializer.ComponentSerializer
 import moshiSerialization.config.getMoshi
 import moshiSerialization.models.MoshiDataContentModel
 import shared.mockData
@@ -24,7 +24,7 @@ fun testKotlinSerialization() {
     println("* Start Kotlin Serialization")
 
     val elapsedTime = measureTime {
-        println("* Result: " + Json.decodeFromString<DataContentModel>(mockData))
+        println("* Result: " + ComponentSerializer.projectJson.decodeFromString<DataContentModel>(mockData))
     }
 
     println("* Finished Kotlin Serialization in ${elapsedTime.toJavaDuration().toMillis()}ms")
